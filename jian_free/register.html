@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Accessories</title>
+   <link rel="stylesheet" href="resources/Accessories.css" type="text/css"></link>
+</head>
+<body>
+	<H3><a href="Welcome.jsp"><img src="./resources/아이콘.png" style="height:200px;"></a></H3>
+	<a href="Login.html"><img src="./resources/login.png" style="height:50px;float:right"></a>
+	<br><br><br>
+	<p style="float:right;">  이승기-정신이 나갔었나봐</p>
+	<audio src="./resources/music.flac" autoplay controls loop ></audio>
+
+	<br><br><br>
+   <div id="topMenu">
+   <ul style="list-style-type: none;margin: 0;padding: 0;background-color: #e9e9e9;">
+      <li><a class="menuLink"  href="About.jsp">About</a></li>
+      <li><a class="menuLink"  href="Sale.jsp">Post</a></li>
+      <li><a class="menuLink"  href="ServiceCenter.jsp">Service Center</a></li>
+    </ul>
+    </div>
+    <br><br><br><br>
+	<div>
+		<form action="http://localhost:8080/jian_free/UserServlet?cmd=join" method="post">
+		
+		<fieldset style = "width:429px; margin: auto;">
+				<legend style="margin:50px 0px 0px 0px;padding-bottom:5px;border-bottom:solid 2px #ccc;
+				font-size:20px; font-weight:bold;">SIGN UP</legend>
+			<ul style="margin-top:20px;">
+				<li style="margin-top:10px;">ID : <input type="text" name="userId" autofocus required placeholder="ID" style="width:100%; height:47px;"></li>
+				<li style="margin-top:10px;">PASSWORD : <input type="text" name="userPasswd" required placeholder="PASSWORD" style="width:100%; height:47px;"></li>
+				<li style="margin-top:10px;">USERNAME : <input type="text" name="userName" required placeholder="USERNAME" style="width:100%; height:47px;"></li>
+				<li style="margin-top:10px;">MOBILE : <input type="text" name="userMobile" required placeholder="***-****-****" style="width:100%; height:47px;"></li>
+				<li style="margin-top:10px;">EMAIL : <input type="text" name="userEmail" required placeholder="***@****.***" style="width:100%; height:47px;"></li>
+			</ul>
+			</fieldset>
+		<br>
+		<fieldset style = "width:429px; margin: auto;">
+			<input type="submit" name="submit" value="보내기">
+			<input type="reset" name="reset" value="다시 작성">
+		</fieldset>
+		</form>
+	</div>
+</body>
+</html>
